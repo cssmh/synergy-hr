@@ -1,0 +1,432 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  @apply overflow-x-hidden max-w-full;
+}
+
+/* COMMON ITEMS */
+.nbtn {
+  @apply text-white font-semibold font-inter px-4 py-2.5 rounded-xl transition-all duration-500 text-[15px];
+}
+
+.nbtn {
+  background-image: linear-gradient(
+    to right,
+    #4361ee,
+    #433ebe,
+    #433ebe,
+    #4361ee
+  );
+  background-size: 300%;
+  background-position: right;
+}
+
+.nbtn:hover {
+  background-position: left;
+}
+
+.nbtn-fixed-bg {
+  @apply py-2.5 px-4 bg-primary text-white rounded-lg text-center text-[15px] font-inter font-semibold cursor-pointer;
+}
+
+.goals h2,
+.services h2,
+.job_posts h2,
+.testimonial h2,
+.newsletter h2,
+#contact h2 {
+  @apply capitalize text-2xl md:text-3xl font-semibold font-inter text-center;
+}
+
+.goals p,
+.services h6,
+.job_posts h6,
+.testimonial h6,
+.newsletter h6,
+#contact h6 {
+  @apply text-center mt-3 font-inter font-medium;
+}
+
+.swiper-pagination .swiper-pagination-bullet {
+  padding: 4px 8px;
+  background: #433ebe;
+  border-radius: 10px;
+}
+
+.swiper-pagination .swiper-pagination-bullet-active {
+  padding: 4px 16px;
+}
+
+.swiper-pagination {
+  position: static !important;
+  margin-top: 20px;
+}
+
+/* LOADING PAGE */
+#loading {
+  @apply h-screen w-full bg-white flex items-center justify-center;
+}
+
+.custom-loader {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: radial-gradient(farthest-side, #433ebe 94%, #0000) top/8px 8px
+      no-repeat,
+    conic-gradient(#0000 30%, #433ebe);
+  -webkit-mask: radial-gradient(farthest-side, #0000 calc(100% - 8px), #000 0);
+  animation: s3 1s infinite linear;
+}
+
+@keyframes s3 {
+  100% {
+    transform: rotate(1turn);
+  }
+}
+
+/* HEADER */
+.nav_item {
+  @apply px-3 py-1.5;
+}
+
+.nav_item::after,
+.nav_item_active::after {
+  @apply block h-[3px] bg-primary  content-[''] transition-all duration-300 rounded-full mx-auto;
+}
+
+.nav_item::after {
+  @apply w-0 hover:w-full;
+}
+
+.nav_item_active::after {
+  @apply w-full;
+}
+
+.header {
+  @apply navbar py-2 max-w-[92%] lg:max-w-[1200px] mx-auto;
+}
+
+.main_nav {
+  @apply navbar-center hidden lg:flex;
+}
+
+.main_nav ul {
+  @apply menu menu-horizontal px-1 space-x-2 font-medium text-base;
+}
+
+.nav_btn {
+  @apply btn btn-ghost lg:hidden;
+}
+
+.header img {
+  @apply w-full md:w-1/2 ml-12 md:ml-0;
+}
+
+.nav_btn svg {
+  @apply w-5 h-5;
+}
+
+.phone_nav {
+  @apply menu menu-sm dropdown-content mt-3 p-2 shadow rounded-box w-80 bg-white h-96 z-50 space-y-3;
+}
+
+/* BANNER */
+
+.banner .slide_container {
+  @apply grid grid-cols-1 md:grid-cols-2 items-center py-10 lg:py-0;
+}
+
+.banner h2 {
+  @apply text-4xl md:text-5xl font-semibold capitalize font-inter leading-snug lg:leading-tight;
+}
+
+.banner p {
+  @apply font-medium font-poppins text-base md:text-[17px] leading-normal;
+}
+
+.banner span {
+  @apply bg-[#c7c5eb] text-primary font-medium uppercase text-xs md:text-sm py-1 px-3 rounded-full leading-none;
+}
+
+/* COUNTER SECTION */
+.counter,
+.goals {
+  @apply py-10 mx-auto;
+}
+
+.counter_container {
+  @apply p-12 bg-gradient-to-r from-primary to-second rounded-[40px] lg:rounded-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 shadow-2xl;
+}
+
+.counter_box {
+  @apply text-center space-y-2;
+}
+
+.counter_box span {
+  @apply text-white font-bold text-6xl font-inter;
+}
+
+.counter_box h3 {
+  @apply text-white font-semibold capitalize text-xl font-poppins;
+}
+
+/* SERVICE SECTION */
+.service_container {
+  @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7 mt-8;
+}
+
+.service_card {
+  @apply border border-slate-300 p-8 hover:-translate-y-2.5 transition-all rounded-xl hover:border-primary min-h-full;
+}
+
+.service_card .image_container {
+  @apply bg-primary w-10 flex items-center justify-center p-2.5 rotate-45 rounded-xl duration-300 transition-all;
+}
+
+.service_card img {
+  @apply w-8 -rotate-45 duration-300 transition-all;
+}
+
+.service_card h3 {
+  @apply text-xl font-semibold font-poppins mt-5 mb-2;
+}
+
+.service_card p {
+  @apply font-medium text-slate-600 font-inter;
+}
+
+.service_card:hover .image_container,
+.service_card:hover img {
+  @apply rotate-0;
+}
+
+/* JOB POSTS SECTION */
+.posts_container {
+  @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7 mt-8;
+}
+
+.job_post_card {
+  @apply border border-slate-300 p-6 hover:-translate-y-2.5 transition-all rounded-xl hover:border-primary;
+}
+
+.job_post_card h3 {
+  @apply text-2xl font-semibold font-inter;
+}
+
+.job_status {
+  @apply flex gap-2 my-2;
+}
+
+.job_post_card .job_status span {
+  @apply text-primary bg-[#c7c5eb] py-1 px-3 font-medium rounded-full text-sm;
+}
+
+.job_post_card p {
+  @apply text-base font-inter font-medium text-slate-600;
+}
+
+.job_post_card p span {
+  @apply font-semibold;
+}
+
+.content-container span {
+  @apply font-semibold;
+}
+
+/* GOALS SECTION */
+
+.goals img {
+  @apply w-full lg:w-[70%] mx-auto mt-5 md:mt-10;
+}
+
+/* TESTIMONIALS */
+.testimonial_card {
+  @apply border-2 rounded-lg p-5 text-center min-h-full;
+}
+
+.testimonial_card img {
+  @apply rounded-full h-20 w-20 mx-auto;
+}
+
+.testimonial_card h3 {
+  @apply font-bold font-inter text-lg;
+}
+
+.testimonial_card h4 {
+  @apply font-semibold font-inter;
+}
+
+.testimonial_card p {
+  @apply font-medium font-inter text-[15px];
+}
+
+/* NEWSLETTER */
+.newsletter {
+  @apply w-full mx-auto relative;
+}
+
+.newsletter_container {
+  @apply rounded-2xl p-4 md:p-8 lg:px-0 lg:py-16 max-w-[92%] lg:max-w-[1200px] mx-auto;
+}
+
+.newsletter .second_container {
+  @apply bg-[#000000b3] rounded-2xl p-5 md:p-8 lg:p-10;
+}
+
+.newsletter h2 {
+  @apply text-white text-center;
+}
+
+.newsletter p {
+  @apply text-center text-white mt-2;
+}
+
+.newsletter form {
+  @apply w-full md:w-3/4 lg:w-1/2 mx-auto md:border rounded-xl flex flex-col md:flex-row gap-3 md:gap-0 mt-4 lg:mt-7;
+}
+
+.newsletter input {
+  @apply flex px-5 py-2.5 lg:py-3.5 rounded-xl md:rounded-s-xl md:rounded-none bg-[#D9D9D933] border md:border-none outline-none text-white mt-0;
+}
+
+.newsletter button {
+  @apply md:rounded-none md:rounded-r-xl md:px-8 lg:px-10;
+}
+
+/* CONTACT SECTION */
+#contact {
+  @apply py-10 lg:py-20 grid grid-cols-1 md:grid-cols-2 gap-5 items-center w-full;
+}
+
+#contact h2,
+#contact h6 {
+  text-align: left !important;
+}
+
+#contact .left_container {
+  @apply space-y-2 mb-16 md:mb-0;
+}
+
+#contact .contact_info {
+  @apply flex items-center gap-4;
+}
+
+.contact_info svg {
+  @apply text-2xl text-primary;
+}
+
+#contact input {
+  @apply input input-bordered w-full;
+}
+
+/* FOOTER */
+#footer {
+  @apply bg-base-200 font-inter;
+}
+
+footer {
+  @apply footer justify-between pt-12 pb-10 max-w-[92%] lg:max-w-[1200px] mx-auto  text-base-content;
+}
+
+footer aside {
+  @apply mt-5 leading-relaxed text-base font-inter font-medium;
+}
+
+footer aside h6 {
+  @apply text-xl font-semibold mt-4;
+}
+
+footer aside div {
+  @apply flex text-3xl space-x-3.5 mt-2;
+}
+
+footer aside svg {
+  @apply text-[27px];
+}
+
+footer nav {
+  @apply space-y-1.5 text-base;
+}
+
+footer nav header {
+  @apply footer-title text-lg;
+}
+
+footer nav a {
+  @apply link link-hover;
+}
+
+.copyright {
+  @apply text-center py-5 text-sm md:text-base border-t-2 font-inter font-medium;
+}
+
+/* Error Page */
+.error img {
+  @apply w-full mx-auto;
+}
+
+/* contact section */
+.contact h1,
+h6,
+.getInTouch h1,
+.info p {
+  @apply font-inter;
+}
+
+.info p {
+  font-weight: 500;
+}
+
+/* */
+
+#manage_applications summary::marker {
+  display: none !important;
+}
+
+/* Emploee page for style and table */
+.table-no-border {
+  border-collapse: collapse;
+}
+.table-no-border td,
+.table-no-border th {
+  border: none;
+}
+
+.react-datepicker-wrapper {
+  @apply !block;
+}
+
+.row-border td {
+  @apply border-2 border-[#45A5E1];
+}
+
+/* SCROLLBAR */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #c7c5eb;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #433ebe;
+  border-radius: 5px;
+}
+
+.new_course .css-art2ul-ValueContainer2 {
+  @apply py-1.5;
+}
+
+.new_course input,
+.update_course input {
+  @apply py-2 rounded-lg px-3 !mt-0 border w-full outline-none;
+}
+
+#main-nav .dropdown li:hover {
+  @apply bg-primary text-white;
+}
