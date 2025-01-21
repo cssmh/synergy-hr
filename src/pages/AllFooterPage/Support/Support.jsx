@@ -11,10 +11,10 @@ const Support = () => {
       /> */}
       <div>
         <h3 className="text-2xl font-inter font-bold my-2">
-          Welcome to Unity Spark Support{" "}
+          Welcome to Synergy HR Support{" "}
         </h3>
         <p className="text-slate-700  lg:text-justify">
-          At unity spark, we are dedicated to providing excellent support to our
+          At Synergy HR, we are dedicated to providing excellent support to our
           clients. Whether you need help with technical issues, account
           management, or have general inquiries, our support team is here to
           assist you.

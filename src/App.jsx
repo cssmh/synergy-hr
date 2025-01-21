@@ -1,12 +1,11 @@
-import './App.css'
+import "./App.css";
 
 function App() {
-
   return (
     <>
-      <h3 className=''>Welcome to unity spark</h3>
+      <h3 className="">Welcome to Synergy HR</h3>
     </>
-  )
+  );
 }
 
-export default App
+export default App;

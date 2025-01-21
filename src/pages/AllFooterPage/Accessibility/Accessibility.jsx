@@ -9,7 +9,7 @@ const Accessibility = () => {
           Accessibility Statement
         </h3>
         <p>
-          Welcome to unity spark ! We are committed to ensuring digital
+          Welcome to Synergy HR ! We are committed to ensuring digital
           accessibility for people of all abilities. We are continually
           improving the user experience for everyone and applying the relevant
           accessibility standards.
@@ -19,7 +19,7 @@ const Accessibility = () => {
           Our Commitment
         </h3>
         <p>
-          At unity spark, we strive to provide a website that is accessible to
+          At Synergy HR, we strive to provide a website that is accessible to
           all users, regardless of technology or ability. We believe that every
           person has the right to access information and services online, and we
           are dedicated to making that a reality for everyone who visits our

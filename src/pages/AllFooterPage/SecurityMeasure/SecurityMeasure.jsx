@@ -10,7 +10,7 @@ const SecurityMeasure = () => {
           Protecting Your Data
         </h3>
         <p>
-          At unity spark, we take the security and privacy of your data very
+          At Synergy HR, we take the security and privacy of your data very
           seriously. We have implemented robust security measures to ensure that
           your information remains safe and secure when you interact with our
           website.

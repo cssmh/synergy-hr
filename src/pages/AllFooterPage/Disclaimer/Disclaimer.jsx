@@ -4,7 +4,7 @@ const Disclaimer = () => {
       <div className="py-5">
         <h3 className="text-3xl font-bold font-inter py-3"> Disclaimer</h3>
         <p>
-          Welcome to unity spark ! Before using our website, please read this
+          Welcome to Synergy HR ! Before using our website, please read this
           Disclaimer carefully. By accessing or using our website, you agree to
           be bound by the terms and conditions outlined in this Disclaimer.{" "}
         </p>
@@ -13,7 +13,7 @@ const Disclaimer = () => {
           Content Accuracy
         </h3>
         <p>
-          The information provided on unity spark is for general informational
+          The information provided on Synergy HR is for general informational
           purposes only. While we strive to keep the information accurate and
           up-to-date, we make no representations or warranties of any kind,
           express or implied, about the completeness, accuracy, reliability,
@@ -27,12 +27,12 @@ const Disclaimer = () => {
         </h3>
         <p>
           Our website may contain links to third-party websites or services that
-          are not owned or controlled by unity spark. We have no control over
-          the content, privacy policies, or practices of any third-party
-          websites or services. We assume no responsibility for the content,
-          accuracy, or completeness of any information found on linked websites.
-          The inclusion of any link does not necessarily imply a recommendation
-          or endorsement by unity spark.
+          are not owned or controlled by Synergy HR. We have no control over the
+          content, privacy policies, or practices of any third-party websites or
+          services. We assume no responsibility for the content, accuracy, or
+          completeness of any information found on linked websites. The
+          inclusion of any link does not necessarily imply a recommendation or
+          endorsement by Synergy HR.
         </p>
         <h3 className="text-2xl font-bold font-inter mt-3 mb-2">
           Changes to Disclaimer

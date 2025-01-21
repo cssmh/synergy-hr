@@ -65,7 +65,7 @@ const PrivacyPolicy = () => {
             <p>
               <strong>Company</strong> (referred to as either &quot;the
               Company&quot;, &quot;We&quot;, &quot;Us&quot; or &quot;Our&quot;
-              in this Agreement) refers to Unity Spark , Level-5, 23, Gulshan,
+              in this Agreement) refers to Synergy HR , Level-5, 23, Gulshan,
               Dhaka-1211.
             </p>
           </li>
@@ -119,7 +119,7 @@ const PrivacyPolicy = () => {
           </li>
           <li>
             <p>
-              <strong>Website</strong> refers to Unity Spark, accessible from{" "}
+              <strong>Website</strong> refers to Synergy HR, accessible from{" "}
               <a
                 href="https://synergy-hr-22122.web.app/"
                 rel="external nofollow noopener"

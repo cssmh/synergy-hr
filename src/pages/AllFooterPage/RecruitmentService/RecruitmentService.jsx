@@ -11,7 +11,7 @@ const RecruitmentService = () => {
         Welcome to Our Recruitment Services
       </h3>
       <p className="text-slate-500  text-justify">
-        At Unity Spark, we understand that finding the right talent is crucial
+        At Synergy HR, we understand that finding the right talent is crucial
         for the success of your business. Our Recruitment Services are designed
         to the hiring process, saving you time and resources while ensuring you
         attract top-notch candidates who are the perfect fit for your

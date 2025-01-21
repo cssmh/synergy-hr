@@ -6,7 +6,7 @@ const Banner = () => {
         <span>ABOUT</span>
         <h2>Chronicles of Excellence Unveiling Our Purpose</h2>
         <p>
-          At Unity Spark, we specialize in innovative Human Resource Management
+          At Synergy HR, we specialize in innovative Human Resource Management
           solutions designed to elevate businesses to new heights. Our platform
           seamlessly integrates cutting-edge technologies, fostering efficient
           operations and empowering companies to nurture a thriving workplace
